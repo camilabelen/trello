@@ -1,22 +1,10 @@
 //funcion para desplegar el formulario
+var board = document.getElementById("board");
+board.addEventListener("click", dropDown);
+
 function dropDown(){
-	/*var padre = document.getElementById("addBoard");
-	var hijo = document.getElementById("list");
-	padre.removeChild(hijo);*/
+	document.getElementById("list").style.display = "none";
+	var newBoard = document.getElementById("newBoard");
+	newBoard.style.display = "block";
 
-
-
-
-
-
-	var addBoard = document.getElementById("newBoard");
-
-	if(addBoard.style.display == 'block'){
-        addBoard.style.display = 'none';
-        board.style.display = 'none';
-    }else{
-       	addBoard.style.display = 'block';
-      	board.style.display = 'none';
-	}
-	
 }

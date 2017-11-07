@@ -22,11 +22,13 @@
 		</nav>
 	</header>
 	<section id="addBoard">
-		<h2>Tablero - Reto de Código</h2>
-		<button type="button" name="añadirLista" id="List" onclick="dropDown()">Añadir una lista...</button> 
+		<div id ="board">
+			<h2>Tablero - Reto de Código</h2>
+			<button type="button" name="añadirLista" id="list">Añadir una lista...</button>
+		</div>
 		<div id="newBoard">
 			<input type="text" name="nuevasListas" placeholder="Añadir una lista..." id="inputList">
-			<button type="button" id="save" onclick="newList()">Guardar</button>
+			<button type="button" id="save">Guardar</button>
 			<i class="fa fa-times" aria-hidden="true"></i>
 		</div>
 	</section>
