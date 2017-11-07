@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trello</title>
+	<link rel="stylesheet" href="asssets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="asssets/icomoon/style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li class="tableros"><i class="fa fa-trello" aria-hidden="true"></i>Tableros</li>
+				<li class="busqueda"> <input type="search"><i class="fa fa-search" aria-hidden="true"></i></li>
+				<li class="trello"><i class="fa fa-trello" aria-hidden="true"></i>Trello</li>
+				<li class="mas"><i class="fa fa-plus" aria-hidden="true"></i></li>
+				<li class="info"><span class="icon-info"></span></li>
+				<li class="notificacion"><i class="fa fa-bell-o" aria-hidden="true"></i></li>
+				<li class="perfil">CC</li>
+			</ul>
+		</nav>
+	</header>
+	<section id="addBoard">
+		<h2>Tablero - Reto de Código</h2>
+		<button type="button" name="añadirLista" id="List" onclick="dropDown()">Añadir una lista...</button> 
+		<div id="newBoard">
+			<input type="text" name="nuevasListas" placeholder="Añadir una lista..." id="inputList">
+			<button type="button" id="save" onclick="newList()">Guardar</button>
+			<i class="fa fa-times" aria-hidden="true"></i>
+		</div>
+	</section>
+	
+
+	<script src="https://use.fontawesome.com/7873633050.js"></script>
+	<script type="text/javascript" src="asssets/js/app.js"></script>
+	
+</body>
+</html>
