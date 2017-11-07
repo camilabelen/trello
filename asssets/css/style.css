@@ -76,11 +76,12 @@ li{
 }
 
 #addBoard h2{
+	width: 100%;
 	margin: 0 auto;
 	font-size: 1.2em;
 	color: #414141;
 	display: inline-block;
-	margin: 70px 0 0 70px;
+	margin: 70px 0 0 10px;
 }
 
 #list{
@@ -93,7 +94,7 @@ li{
 	font-size: 1em;
 	font-weight: 600;
 	font-family: 'PT Sans', sans-serif;
-	margin: 30px 0 0 70px;
+	margin: 30px 0 0 10px;
 	padding-left: 10px;
 	text-align: left;
 	display: block;
@@ -105,19 +106,17 @@ li{
 
 #newBoard{
 	width: 280px;
-	height: 115px;
+	height: auto;
 	background-color: #D4D4D4;
-	margin-left: 70px;
+	margin-left: 10px;
 	margin-top: 35px;
 	display: none;
 	border-radius: 5px;
-	float: left;
 }
 
 #inputList{
 	width: 250px;
 	height: 40px;
-	display: block;
 	border:none;
 	border-radius: 5px;
 	background-color: rgba(197,197,197,0.67);
@@ -127,8 +126,6 @@ li{
 	font-family: 'PT Sans', sans-serif;
 	margin: 10px 10px 10px 10px;
 	padding-left: 10px;
-	
-	vertical-align: middle;
 }
 
 #inputList:focus{
@@ -146,8 +143,43 @@ li{
 	font-weight: 600;
 }
 
+#save:focus{
+	outline: 0;
+}
+
+#save:hover{
+	cursor:pointer;
+}
+
 #newBoard .fa-times{
 	color: #414141;
 	font-size: 1.5em;
 	vertical-align: middle;
+}
+
+#newList div{
+	background-color: #D4D4D4;
+	width: 280px;
+	height: auto;
+	background-color: #D4D4D4;
+	margin-left: 70px;
+	border-radius: 5px;
+	vertical-align: bottom;
+}
+
+#newList p{
+	color: #414141;
+	padding-left: 15px;
+	margin-bottom: 5px;
+	display: block;
+}
+
+#newList a{
+	color: #24115D;
+	font-size: 1em;
+	font-weight: 300;
+	text-decoration: underline;
+	padding-left: 15px;
+	display: block;
+	margin-bottom: 10px;
 }
