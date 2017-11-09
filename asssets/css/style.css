@@ -3,7 +3,7 @@ body{
 	font-family:  'PT Sans', sans-serif;
 	font-weight: 600;
 }
-
+/*menú*/
 header, nav{
 	width: 100%;
 	height: 40px;
@@ -75,6 +75,8 @@ li{
     text-align: center;
 }
 
+/*sección tableros*/
+/*titulo*/
 #addBoard h2{
 	width: 100%;
 	margin: 0 auto;
@@ -83,7 +85,7 @@ li{
 	display: inline-block;
 	margin: 70px 0 0 10px;
 }
-
+/*boton Añadir una lista*/
 #list{
 	width: 250px;
 	height: 40px;
@@ -104,6 +106,7 @@ li{
 	outline: 0;
 }
 
+/*contenedor input y boton*/
 #newBoard{
 	width: 280px;
 	height: auto;
@@ -114,6 +117,7 @@ li{
 	border-radius: 5px;
 }
 
+/*input para crear tablero*/
 #inputList{
 	width: 250px;
 	height: 40px;
@@ -132,6 +136,7 @@ li{
 	outline: 0;
 }
 
+/*boton para guardar tablero*/
 #save{
 	background-color: #3AD053;
 	color:#FFF;
@@ -150,18 +155,22 @@ li{
 #save:hover{
 	cursor:pointer;
 }
-
+/*icono X*/
 #newBoard .fa-times{
 	color: #414141;
 	font-size: 1.5em;
 	vertical-align: middle;
 }
+/*contenedor de formulario y nuevos tableros*/
+#addBoard{
+	vertical-align: bottom;
+}
 
+/*elementos creados desde js, nuevos tableros*/
 #newList div{
 	background-color: #D4D4D4;
 	width: 280px;
 	height: auto;
-	background-color: #D4D4D4;
 	margin-left: 70px;
 	border-radius: 5px;
 	vertical-align: bottom;
@@ -182,4 +191,17 @@ li{
 	padding-left: 15px;
 	display: block;
 	margin-bottom: 10px;
+}
+
+#newList a:hover{
+	cursor:pointer;
+}
+
+#newList form{
+	width: 250px;
+	height: auto;
+}
+
+#newList button:focus{
+	outline: 0; 
 }
