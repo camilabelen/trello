@@ -74,13 +74,13 @@ function addCards(){
     cardButton.style.borderRadius = "5px";
     cardButton.style.fontWeight = "600";
     cardButton.style.fontSize = "1em";
-    cardButton.style.marginLeft = "10px";
+    cardButton.style.margin = "10px";
     cardButton.style.backgroundColor ="#3AD053";
     cardButton.style.color ="#FFF";
     //estilos textarea
-    textarea.style.marginLeft ="10px";
+    textarea.style.margin ="10px";
     textarea.style.width = "250px";
-    textarea.style.height = "80px";
+    textarea.style.height = "50px";
     textarea.style.float = "left";
 }
 
