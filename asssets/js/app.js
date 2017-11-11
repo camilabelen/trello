@@ -66,7 +66,10 @@ function addCards(){
 	form.appendChild(textarea);
 	form.appendChild(cardButton);
 	divForm.appendChild(form);
-
+    //id a formulario
+    form.setAttribute("id", "taskForm")
+    //type a boton agregar
+    cardButton.setAttribute("type", "button");
     //estilos al botón
     cardButton.style.display ="block";
     cardButton.style.border ="none";
@@ -82,6 +85,34 @@ function addCards(){
     textarea.style.width = "250px";
     textarea.style.height = "50px";
     textarea.style.float = "left";
+    cardButton.addEventListener("click", addTask);
 }
 
+
+function addTask() {
+    var textarea = document.getElementsByTagName("textarea")[0];
+    var formulario = document.getElementById("taskForm");
+    document.getElementsByTagName("textarea")[0].setAttribute("id", "taskInput");
+    var inputValue = document.getElementById("taskInput").value;
+    //borrar contenido del textarea
+    document.getElementsByTagName("textarea")[0].value = "";
+    //contenedor de div de las nuevas tareas
+    var container = document.getElementById("divForm");
+    //elemento donde se guardara la nueva tarea
+    var task = document.createElement("div");
+    //nodo texto tarea
+    var taskName = document.createTextNode(inputValue);
+    //elemento contenedor del input del textarea
+    var taskCont = document.createElement("p");
+    /*agregando nodo texto contenido de textarea, 
+    p contenedor del nodo texto y div contenedor de p*/
+    taskCont.appendChild(taskName);
+    task.appendChild(taskCont);
+    container.insertBefore(task, formulario);
+
+    //estilo a tarea
+    taskCont.style.fontWeight = "400";
+    taskCont.style.display ="block";
+    taskCont.style.padding = "5px";
+}
 

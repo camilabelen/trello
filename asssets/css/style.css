@@ -162,11 +162,8 @@ li{
 	font-size: 1.5em;
 	vertical-align: middle;
 }
-/*contenedor de formulario y nuevos tableros*/
-#addBoard{
-	vertical-align: bottom;
-}
 
+/*contenedor de formulario y nuevos tableros*/
 /*elementos creados desde js, nuevos tableros*/
 #newList div{
 	background-color: #D4D4D4;
@@ -174,15 +171,18 @@ li{
 	height: auto;
 	margin-left: 70px;
 	border-radius: 5px;
-	vertical-align: bottom;
+	vertical-align: top;
 }
 
+/*nombre del tablero*/
 #newList p{
 	color: #414141;
 	padding-left: 15px;
 	margin-bottom: 5px;
 	display: block;
 }
+
+/*añadir tarea*/
 
 #newList a{
 	color: #24115D;
@@ -198,6 +198,8 @@ li{
 	cursor:pointer;
 }
 
+
+/*formulario*/
 #newList form{
 	width: 250px;
 	height: auto;
@@ -205,4 +207,18 @@ li{
 
 #newList button:focus{
 	outline: 0; 
+}
+
+
+/*div contenedor de tareas*/
+#divForm div{
+	background-color: #E4E4E4;
+	width: 260px;
+	border-radius: 0;
+	margin-left: 10px;
+}
+
+/*p contenedor del texto de nueva tarea*/
+#divForm div p{
+	margin: 5px 0 0 0;
 }
